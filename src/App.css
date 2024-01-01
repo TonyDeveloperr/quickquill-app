@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&family=Sora:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #18181e;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #7579e7;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0 auto;
+}
+
+.motto {
+  color: #7579e7;
+  font-family: "Mukta";
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  font-style: oblique;
+}
+
+.note-form-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.note-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-input {
+  background-color: transparent;
+  border: 2px solid #7579e7;
+  border-radius: 20px;
+  padding: 0.7rem;
+  min-width: 30%;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+  color: #9fa2f3;
+}
+
+.note-submit {
+  background-color: #7579e7;
+  padding: 0.7rem 0.7rem;
+  border-radius: 20px;
+  border: none;
+  margin: 0.7rem;
+  color: #d9daf5;
+  font-weight: 500;
+  font-size: 1rem;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  min-height: 17rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  max-width: 13rem;
+  min-width: 13rem;
+}
+
+.note p {
+  color: #ffffff;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  height: 100%;
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
+.delete-btn {
+  background-color: #f55736;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.2rem;
+  max-width: 5rem;
+  align-self: flex-end;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.delete-btn small {
+  color: white;
+  font-family: "Sara";
+  pointer-events: none;
+}
+
+.note-input::placeholder {
+  color: #3d3e67;
+  font-family: "Ubuntu";
+  opacity: 1; /* Firefox */
+}
+
+.note-submit:hover {
+  opacity: 80%;
+}
+
+.note-list {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+  background-color: rgb(216, 18, 18);
+}
